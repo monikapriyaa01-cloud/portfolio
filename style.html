@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Appointment Schedule</title>
+    <style>
+      body{
+        background-color: black;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        margin-top: 50px;
+      }
+.cont{
+  background-color: rgb(57, 54, 54);
+  border-radius: 20px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  
+}
+.schedule {
+  display: grid;
+  grid-template-columns: 120px repeat(5, 1fr);
+  gap: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+.schedule button {
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+} 
+.ava{
+  background: linear-gradient(to bottom right,rgba(18, 133, 7, 0.5));
+  border-width: 50px 20px;
+  border-color: green;
+}
+.unv{
+  background-color: darkgrey;
+}
+.boo{
+  background-color: darkred;
+}
+    </style>
+</head>
+<body>
+  <div class="cont">
+    <div class="schedule">
+  <div></div>
+  <div>Mon</div>
+  <div>Tue</div>
+  <div>Wed</div>
+  <div>Thu</div>
+  <div>Fri</div>
+
+  <div>9:00 AM</div>
+  <button class="ava">Available</button>
+  <button class="unv">Unavailable</button>
+  <button class="boo">Booked</button>
+  <button class="ava">Available</button>
+  <button class="boo">Booked</button>
+
+  <div>10:00 AM</div>
+  <button class="boo">Booked</button>
+  <button class="ava">Available</button>
+  <button class="unv">Unavailable</button>
+  <button class="ava">Available</button>
+  <button class="boo">Booked</button>
+
+  <div>11:00 AM</div>
+  <button class="ava">Available</button>
+  <button class="boo">Booked</button>
+  <button class="ava">Available</button>
+  <button class="unv">Unavailable</button>
+  <button class="ava">Available</button>
+</div>
+</div>
+</body>
+</html>
